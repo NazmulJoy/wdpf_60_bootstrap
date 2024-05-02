@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.7.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Modal Login form</h2>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Login
+      </button>
+
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Sign into account</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="Email"
+                    name=""
+                    id=""
+                    class="form-control"
+                    name="email"
+                    placeholder="Enter email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="Password">Password:</label>
+                  <input
+                    type="Password"
+                    name="Password"
+                    id=""
+                    class="form-control"
+                    placeholder="Enter Password"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Sign in
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
